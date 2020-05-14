@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LiveStreamingApp</string>
+    <string name="facebook_app_id">2306333522731243</string>
+    <!--  <string name="app_record">Record Video</string>-->
+</resources>

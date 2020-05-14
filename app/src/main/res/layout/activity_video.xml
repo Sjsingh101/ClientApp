@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoActivity"
+    android:id="@+id/bbbb">
+
+    <accurate.gaw.livestreamingapp.widget.PortraitFrameLayout
+        android:id="@+id/wrap_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_keyboard_arrow_left_big"
+        android:background="@null"
+        android:tint="#fff"
+        android:textColor="#000"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/btn_cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_clear_24px"
+        android:background="@null"
+        android:tint="#FFF"
+
+        android:padding="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+    <ImageButton
+        android:id="@+id/btn_switch_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_photo_camera"
+        android:background="@null"
+        android:tint="#FFF"
+
+        android:padding="10dp"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cross" />
+
+    <!--<Button
+        android:id="@+id/btn_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLASH"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_switch_camera" />-->
+
+    <ImageButton
+        android:id="@+id/btn_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_face_24px"
+        android:background="@null"
+        android:tint="#FFF"
+        android:text="FILTER"
+        android:padding="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_switch_camera" />
+
+  <!--  <ImageButton
+        android:id="@+id/btn_image_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_crown"
+        android:background="@null"
+        android:tint="#000"
+        android:text="IMAGE CAPTURE"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_filter" />-->
+
+    <ImageButton
+        android:id="@+id/btn_image_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_stopwatch"
+        android:padding="10dp"
+        android:background="@null"
+        android:tint="#FFF"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_filter" />
+
+
+
+
+
+
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="#FFF"
+        android:progressTint="@color/backcolor"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="20dp"
+        android:indeterminate="false"
+        android:max="100"
+
+        android:minHeight="7dp"
+        android:minWidth="200dp"
+        android:progress="0" />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+     android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:weightSum="5"
+        android:background="@color/backcolor"
+        android:alpha="0.5"
+        android:layout_marginBottom="90dp">
+        <Button
+
+            android:id="@+id/mag1"
+            android:layout_marginTop="-4dp"
+            android:layout_marginBottom="-4dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:text="0.1x"
+            app:backgroundTint="@android:color/transparent"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:padding="2dp"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            />
+        <Button
+            android:id="@+id/mag2"
+            android:layout_marginTop="-4dp"
+            android:layout_marginBottom="-4dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:text="0.5x"
+            android:padding="2dp"
+            app:backgroundTint="@android:color/transparent"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            />
+        <Button
+            android:id="@+id/mag3"
+            android:layout_marginTop="-4dp"
+            android:layout_marginBottom="-4dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+            android:text="1x"
+            android:textAllCaps="false"
+            app:backgroundTint="@android:color/transparent"
+            android:textColor="#000"
+            android:textSize="15dp"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            />
+        <Button
+            android:id="@+id/mag4"
+            android:layout_marginTop="-4dp"
+            android:layout_marginBottom="-4dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+        android:text="2x"
+            app:backgroundTint="@android:color/transparent"
+            android:textColor="#000"
+            android:textAllCaps="false"
+        android:textSize="15dp"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        />
+        <Button
+            android:id="@+id/mag5"
+            android:layout_marginTop="-4dp"
+            android:layout_marginBottom="-4dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="55dp"
+        android:text="3x"
+            android:textAllCaps="false"
+            app:backgroundTint="@android:color/transparent"
+            android:textColor="#000"
+        android:textSize="15dp"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:weightSum="3"
+        >
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/audio"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#FFF"
+                android:text="Add Sound"/>
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:gravity="center"
+        android:layout_weight="1">
+       <!--     <Button
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+
+                android:backgroundTint="@color/backcolor"
+
+             />-->
+<ImageButton
+    app:elevation="1dp"
+    android:id="@+id/btn_record"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:background="@null"
+    android:src="@drawable/record2"
+    android:layout_gravity="center"
+    android:foregroundGravity="center"/>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/vdoUploadBtn"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="Upload"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/btn_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>

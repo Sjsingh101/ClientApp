@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/btnsh" >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#B0D3E6"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <HorizontalScrollView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:scrollbars="none"
+            android:id="@+id/filtrview">
+        </HorizontalScrollView>
+
+        <ListView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/filterList"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="10dp"></ListView>
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManualLoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circlebackground"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColorHint="#fff"
+        android:layout_marginTop="20dp"
+        app:hintTextAppearance="@style/TextHint"
+        android:clipToPadding="false"
+        android:layout_marginRight="120dp"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/edittextbackground"
+        android:paddingTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:id="@+id/loginEmailEditText"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edittextbackground"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:gravity="top"
+            android:inputType="textEmailAddress"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColorHint="#fff"
+        android:layout_marginTop="10dp"
+        app:hintTextAppearance="@style/TextHint"
+        android:paddingTop="10dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/edittextbackground">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editTextHeight"
+            android:id="@+id/loginPasswordEditText"
+            android:hint="password"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edittextbackground"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:inputType="textPassword"
+            android:gravity="top"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnheight"
+        android:layout_marginRight="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+
+        android:text="LOGIN"
+        android:textSize="@dimen/textSize"
+        android:textColor="#7edff6"
+        android:id="@+id/loginBtn"
+        android:textStyle="normal"
+        android:background="@drawable/rounded_button_white"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:id="@+id/textViewForgotPassword"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

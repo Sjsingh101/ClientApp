@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AfterLoginActivity">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@color/backcolor"
+        android:minHeight="?attr/actionBarSize"
+
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/ic_crown"
+                android:tint="#fff"
+                android:layout_gravity="center"
+                tools:ignore="VectorDrawableCompat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+
+                <HorizontalScrollView
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:scrollbars="none">
+
+                    <android.support.design.chip.ChipGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        app:singleLine="true">
+
+                        <android.support.design.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginRight="2dp"
+                            android:text="Near By"
+                            android:textSize="@dimen/tabTextSize"
+                            app:chipStrokeColor="#7edff6"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:theme="@style/Widget.MaterialComponents.Chip.Action"
+                            app:chipBackgroundColor="@color/backcolor"
+                            app:chipCornerRadius="35dp"
+                            android:textStyle="bold"
+                            app:chipStrokeWidth="2dp" />
+
+                        <android.support.design.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_marginRight="2dp"
+                            android:text="Video"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="@dimen/tabTextSize"
+                            app:chipStrokeColor="#7edff6"
+                            android:theme="@style/Widget.MaterialComponents.Chip.Action"
+                            app:chipBackgroundColor="@color/backcolor"
+                            app:chipCornerRadius="25dp"
+                            app:chipIconSize="0dp"
+                            android:layout_marginLeft="5dp"
+                            app:chipStrokeWidth="2dp" />
+
+                        <android.support.design.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Moment"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="@dimen/tabTextSize"
+                            app:chipStrokeColor="#7edff6"
+                            android:theme="@style/Widget.MaterialComponents.Chip.Action"
+                            app:chipBackgroundColor="@color/backcolor"
+                            app:chipCornerRadius="25dp"
+                            app:chipIconSize="0dp"
+
+                            app:chipStrokeWidth="2dp" />
+
+                        <android.support.design.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Featured"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:theme="@style/Widget.MaterialComponents.Chip.Action"
+                            android:textSize="@dimen/tabTextSize"
+                            app:chipStrokeColor="#7edff6"
+                            app:chipBackgroundColor="@color/backcolor"
+                            app:chipCornerRadius="25dp"
+                            app:chipIconSize="0dp"
+                            app:chipStrokeWidth="2dp" />
+
+
+                    </android.support.design.chip.ChipGroup>
+
+
+
+                </HorizontalScrollView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="-3dp"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24px"
+                    android:tint="#fff"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="10dp"
+                    app:srcCompat="@drawable/ic_musica_searcher"
+                    android:tint="#fff"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="90dp"
+       android:layout_marginBottom="46dp">
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/recyclerViewg"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+       </android.support.v7.widget.RecyclerView>
+   </LinearLayout>
+
+
+
+
+        <LinearLayout
+
+
+            android:id="@+id/btmbar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:background="@drawable/roundcorners"
+            android:clipToPadding="false"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:srcCompat="@drawable/ic_user"
+                    android:tint="@color/backcolor"
+                    tools:ignore="VectorDrawableCompat"
+                    android:id="@+id/profileImg"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:srcCompat="@drawable/ic_mail"
+                    android:tint="@color/backcolor"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:srcCompat="@drawable/ic_heart"
+                    android:tint="@color/backcolor"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:srcCompat="@drawable/ic_home"
+                    android:tint="@color/backcolor"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/camerafab"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/fab"
+            app:fabCustomSize="70dp"
+            android:tint="#ffacca"
+            android:src="@drawable/videocam"
+            app:maxImageSize="40dp"
+            app:backgroundTint="#ffacca"
+            app:borderWidth="2dp"
+            android:elevation="30dp"
+            android:backgroundTint="#FFF"
+            android:layout_marginBottom="20dp"
+            />
+
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.design.widget.CoordinatorLayout>

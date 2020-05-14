@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9403A0</color>
+    <color name="colorPrimaryDark">#03A9F4</color>
+    <color name="colorAccent">#fff</color>
+    <color name="backcolor">#03A9F4</color>
+    <color name="getStart_statusbar_color">#000</color>
+    <color name="statusbar_color">#9403A0F4</color>
+    <color name="nocolor">#00FFFFFF</color>
+    <color name="lightcolor">#00F0F8FF</color>
+</resources>

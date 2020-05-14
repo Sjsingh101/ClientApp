@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManualLoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circlebackground"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="GAW"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="Login"
+        android:inputType="text"
+        android:shadowColor="#000"
+        android:elevation="10dp"
+        android:textSize="@dimen/textSize"
+        android:textColor="#7edff6"
+        android:id="@+id/loginBtn"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:gravity="right"
+        android:layout_gravity="center"
+
+        android:layout_marginRight="38dp">
+        <ImageButton
+            android:id="@+id/gmail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_button_white"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_gmail"
+
+            />
+        <ImageButton
+            android:id="@+id/fbbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+
+            android:src="@drawable/facebookicon"
+            android:background="@drawable/rounded_button_blue"
+            android:layout_marginLeft="12dp"
+            android:elevation="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_button_green"
+            android:src="@drawable/phn"
+            android:layout_marginLeft="12dp"
+            android:elevation="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have account ? Sign up now"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="0dp"
+        android:id="@+id/signuptext"
+        />
+
+</LinearLayout>
